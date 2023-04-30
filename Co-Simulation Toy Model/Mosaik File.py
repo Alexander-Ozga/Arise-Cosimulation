@@ -4,15 +4,15 @@ import mosaik.util
 SIM_CONFIG = {
     'Solar_Sim': {
         'cmd': 'python Solar_Sim.py 10.130.161.192:8000',
-        'cwd': 'Desktop/SolarMosaic/'
+        'cwd': 'Desktop/SolarMosaik/'
     },
     'Power_Plant_Sim': {
         'cmd': 'python Power_Plant_Sim.py 10.130.161.196:8000',
-        'cwd': 'Desktop/PowerMosaic/'
+        'cwd': 'Desktop/PowerMosaik/'
     },
     'Collector_Sim': {
         'cmd': 'python Collector_Sim.py 10.130.161.193',
-        'cwd': 'Desktop/CollectorMosaic/'
+        'cwd': 'Desktop/CollectorMosaik/'
     }
 }
 
