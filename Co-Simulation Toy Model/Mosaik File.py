@@ -11,7 +11,7 @@ SIM_CONFIG = {
         'cwd': 'Desktop/PowerMosaik/'
     },
     'Collector_Sim': {
-        'cmd': 'python Collector_Sim.py 10.130.161.193',
+        'cmd': 'python Collector_Sim.py 10.130.161.193:8000',
         'cwd': 'Desktop/CollectorMosaik/'
     }
 }
