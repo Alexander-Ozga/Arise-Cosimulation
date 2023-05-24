@@ -4,10 +4,10 @@ import Collector_Model
 META = {
     'type': 'time-based',
     'models': {
-        'PowerModel': {
+        'CollectorModel': {
             'public': True,
             'params': [],
-            'attrs': ['data']
+            'attrs': ['data','df']
         }
     }
 }

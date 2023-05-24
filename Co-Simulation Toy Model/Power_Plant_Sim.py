@@ -29,12 +29,12 @@ class PowerSimulator(mosaik_api.Simulator):
             self.eid_prefix = eid_prefix
         return self.meta
 
-    def create(self, num, model, init_val):
+    def create(self, num, model, init_power_in):
         next_eid = len(self.entities)
         entities = []
 
         for i in range(next_eid, next_eid + num):
-            power_instance = Power_Plant_Model.PowerModel(init_val)
+            power_instance = Power_Plant_Model.PowerModel(init_power_in)
             eid = '%s%d' % (self.eid_prefix, i)
             self.entities[eid] = power_instance
             entities.append({'eid': eid, 'type': power_instance})

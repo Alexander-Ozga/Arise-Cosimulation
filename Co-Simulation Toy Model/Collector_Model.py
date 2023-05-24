@@ -6,6 +6,7 @@ import pandas as pd
 class Collector:
     # Initializes its parameters in this section of the data.
     def __init__(self):
+        self.df = None
         self.data = {'time': [], 'power_output': []}
 
     # The Step is just appending the data to the overall dictionary.
@@ -15,5 +16,5 @@ class Collector:
 
     # Converts data to CSV
     def finalize(self):
-        df = pd.DataFrame(self.data)
-        df.to_csv("Example_Data_Collected")
+        self.df = pd.DataFrame(self.data)
+        self.df.to_csv("Example_Data_Collected")
