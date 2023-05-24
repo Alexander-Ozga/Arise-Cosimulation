@@ -29,7 +29,7 @@ Collector = world.start('Collector_Sim', eid_prefix="collector_")
 # Create Entities
 SolarModel = Solar.SolarModel.create(20)
 PowerModel = PowerPlant.PowerModel(init_power_in=0)
-Recorder = Collector.Recorder()
+Recorder = Collector.CollectorModel()
 
 # Connect Entities
 mosaik.util.connect_many_to_one(world, SolarModel, PowerModel, 'x', 'val' 'delta')

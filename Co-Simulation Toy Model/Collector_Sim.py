@@ -1,6 +1,6 @@
 import mosaik_api
 import Collector_Model
-# metadata for mosaik
+# metadata for mosaik (fixed model name)
 META = {
     'type': 'time-based',
     'models': {

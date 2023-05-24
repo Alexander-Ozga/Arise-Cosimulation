@@ -4,7 +4,7 @@ import pandas as pd
 # This class defines the model for the collector. It will essentially check the time and corresponding input, then add
 # them to a dictionary. At the end it will be converted into a pandas data frame which will then be turned into a CSV.
 class Collector:
-    # Initializes its parameters in this section of the data.
+    # Initializes its parameters in this section of the data. The dataframe was added as an attribute as well.
     def __init__(self):
         self.df = None
         self.data = {'time': [], 'power_output': []}
