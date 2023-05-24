@@ -70,7 +70,7 @@ class CollectorSimulator(mosaik_api.Simulator):
 
 # This is how we start the simulator.
 def main():
-    return mosaik_api.start_simulation(CollectorSimulator)
+    return mosaik_api.start_simulation(CollectorSimulator())
 
 
 if __name__ == '__main__':

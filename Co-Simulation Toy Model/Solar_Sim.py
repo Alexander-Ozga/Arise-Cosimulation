@@ -69,9 +69,11 @@ class SolarSim(mosaik_api.Simulator):
         # returns all data asked for by other simulators
         return data
 
+    def finalize(self):
+        return
 
 def main():
-    return mosaik_api.start_simulation(SolarSim)
+    return mosaik_api.start_simulation(SolarSim())
 
 
 if __name__ == '__main__':

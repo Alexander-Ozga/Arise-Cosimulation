@@ -73,7 +73,7 @@ class PowerSimulator(mosaik_api.Simulator):
 
 
 def main():
-    return mosaik_api.start_simulation(PowerSimulator)
+    return mosaik_api.start_simulation(PowerSimulator())
 
 
 if __name__ == '__main__':
